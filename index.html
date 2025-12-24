@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Year Surprise</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(180deg, #000000, #120000);
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+    }
+
+    h1 {
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .tickets {
+      margin: 30px 0;
+      padding: 30px;
+      border: 1px solid rgba(255,0,0,0.4);
+      box-shadow: 0 0 20px rgba(255,0,0,0.4);
+      border-radius: 8px;
+    }
+
+    .play {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      border: 1px solid red;
+      color: red;
+      text-decoration: none;
+      letter-spacing: 2px;
+      border-radius: 5px;
+    }
+
+    .play:hover {
+      background: red;
+      color: black;
+    }
+
+    img.ticket-img {
+      max-width: 100%;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>NEW YEAR. NEW MEMORY.</h1>
+    <p>This year I wanted to give you a feeling.</p>
+    <p>Lights. Music. Night. Us.</p>
+
+    <div class="tickets">
+      <p><strong>Live Concert</strong></p>
+      <p>Date: 20 June 2026</p>
+      <p>City: Copenhagen</p>
+      <p>Time: 20:00</p>
+      <!-- Если хочешь вставить скрин билета, добавь файл ticket.png и раскомментируй следующую строку -->
+      <!-- <img class="ticket-img" src="ticket.png" alt="Ticket"> -->
+    </div>
+
+    <a class="play" href="https://youtu.be/XXYlFuWEuKI?si=uW9FlHSCYFOBGUF0" target="_blank">
+      ▶ PLAY SONG
+    </a>
+  </div>
+
+</body>
+</html>
