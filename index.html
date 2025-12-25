@@ -60,11 +60,19 @@
       margin-top: 15px;
       border-radius: 5px;
     }
+    #countdown {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #ff4d4d;
+}
+
   </style>
 </head>
 <body>
 
   <div class="container">
+    <div id="countdown"></div>
     <h1>NEW YEAR. NEW MEMORY.</h1>
     <p>This year I wanted to give you a feeling.</p>
     <p>Lights. Music. Night. Us.</p>
@@ -82,7 +90,30 @@
       ▶ PLAY SONG
     </a>
   </div>
+<script>
+  const concertDate = new Date("June 20, 2026 20:00:00").getTime();
+
+  const timer = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = concertDate - now;
+
+    if (distance < 0) {
+      clearInterval(timer);
+      document.getElementById("countdown").innerHTML = "🎉 IT’S TONIGHT 🎉";
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      days + " DAYS " + hours + " HRS " + minutes + " MIN " + seconds + " SEC";
+  }, 1000);
+</script>
 
 </body>
 </html>
+
 
