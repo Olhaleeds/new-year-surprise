@@ -66,6 +66,17 @@
   margin-bottom: 30px;
   color: #ff4d4d;
 }
+    .video {
+  margin: 30px 0;
+}
+
+.video iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255,0,0,0.4);
+}
+
 
   </style>
 </head>
@@ -82,9 +93,15 @@
       <p>Date: 20 June 2026</p>
       <p>City: Copenhagen</p>
       <p>Time: 20:00</p>
-      <!-- Если хочешь вставить скрин билета, добавь файл ticket.png и раскомментируй следующую строку -->
-      <!-- <img class="ticket-img" src="ticket.png" alt="Ticket"> -->
+     
     </div>
+<div class="video">
+  <iframe 
+    src="https://www.youtube.com/embed/XXYlFuWEuKI"
+    frameborder="0"
+    allowfullscreen>
+  </iframe>
+</div>
 
     <a class="play" href="https://youtu.be/XXYlFuWEuKI?si=uW9FlHSCYFOBGUF0" target="_blank">
       ▶ PLAY SONG
@@ -115,5 +132,6 @@
 
 </body>
 </html>
+
 
 
